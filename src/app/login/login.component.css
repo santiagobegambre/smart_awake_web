@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  .media {
+    width: 50%;
+    height: auto;
+    order: -1; 
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .title {
+    font-size: 4.1rem;
+    font-weight: 500;
+    margin-bottom: 5.3rem;
+  }
+  
+  .inputs {
+    margin-bottom: 1rem;
+  }
+  
+  .input {
+    width: calc(100% - 4rem); /* Reducir el ancho para dejar espacio para los bordes */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    border-radius: 0; /* Hacer los bordes cuadrados */
+}
+
+.button {
+    width: calc(100% - 2rem); /* Hacer que el botón tenga el mismo ancho que los cuadros de texto */
+    background-color: #5467e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 0; /* Hacer los bordes cuadrados */
+    padding: 1rem; /* Ajustar el padding para que sea proporcional */
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem; /* Ajustar el margen inferior para que sea consistente con los cuadros de texto */
+}

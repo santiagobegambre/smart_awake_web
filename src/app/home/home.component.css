@@ -1,0 +1,117 @@
+.HomeS {
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    background: white;
+}
+
+.Line1 {
+    width: 860px;
+    height: 0px;
+    left: 271px;
+    top: 0px;
+    position: absolute;
+    transform: rotate(89.94deg);
+    transform-origin: 0 0;
+    border: 1px black solid;
+}
+
+.Media {
+    width: 271px;
+    height: 167px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.Rectangle1 {
+    width: 272px;
+    height: 61px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #5467E2;
+}
+
+.ButtonContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.InicioBtn,
+.UsuariosBtn,
+.PreguntasBtn {
+    width: 190px;
+    height: 61px;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.10px;
+    word-wrap: break-word;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative; 
+    top: 200px; 
+    color: black; 
+}
+
+.InicioBtn:hover,
+.UsuariosBtn:hover,
+.PreguntasBtn:hover {
+    background-color: blue;
+    color: white; 
+}
+
+.InicioBtn:active,
+.UsuariosBtn:active,
+.PreguntasBtn:active {
+    background-color: blue; 
+    color: white; 
+}
+
+.ButtonImage {
+    margin-right: 10px; 
+    position: relative; 
+    top: 200px; 
+}
+
+.Title {
+    width: 807px;
+    height: 299px;
+    left: 401px;
+    top: 341px;
+    position: absolute;
+    text-align: center;
+    font-size: 64px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 52.50px;
+    word-wrap: break-word;
+}
+
+.IconsAccountCircleFilled24px {
+    width: 65px;
+    height: 61px;
+    padding-left: 5.42px;
+    padding-right: 5.42px;
+    padding-top: 5.08px;
+    padding-bottom: 5.08px;
+    left: 1278px;
+    top: 3px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.Icon {
+    width: 54.17px;
+    height: 50.83px;
+}

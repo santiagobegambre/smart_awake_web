@@ -1,0 +1,48 @@
+<!-- main-layout.component.html -->
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo-container">
+      <img src="https://cdn-icons-png.freepik.com/512/4804/4804212.png" alt="Logo" class="sidebar-logo">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li class="nav-item"><a href="/home">Inicio</a></li>
+        <li class="nav-item active"><a href="/users">Usuarios</a></li>
+        <li class="nav-item"><a href="/questions">Preguntas</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="content">
+    <div class="admin-section">
+      <span class="admin-icon">👤</span> 
+      <span class="admin-text">Admin</span>
+    </div>
+    <div class="users-section">
+      <div class="users-header">
+        <h2>USUARIOS</h2>
+        <div class="search-area">
+          <span class="search-label">BUSCAR:</span>
+          <div class="search-box">
+            <input type="text" placeholder="Escriba el nombre del usuario">
+          </div>
+        </div>
+      </div>
+      <div class="users-table">
+        <div class="table-header">
+          <div class="header-item">NOMBRE</div>
+          <div class="header-item">CORREO</div>
+          <div class="header-item">FECHA DE INGRESO</div>
+          <div class="header-item">ACCIÓN</div>
+        </div>
+        <div class="table-row" *ngFor="let user of users">
+          <div class="table-item">{{ user.name }}</div>
+          <div class="table-item">{{ user.email }}</div>
+          <div class="table-item">{{ user.date }}</div>
+          <div class="table-item">
+            <button class="delete-button" (click)="deleteUser(user)">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

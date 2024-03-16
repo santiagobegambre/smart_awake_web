@@ -1,0 +1,48 @@
+<!-- main-layout.component.html -->
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo-container">
+      <img src="https://cdn-icons-png.freepik.com/512/4804/4804212.png" alt="Logo" class="sidebar-logo">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li class="nav-item"><a href="/home">Inicio</a></li>
+        <li class="nav-item"><a href="/users">Usuarios</a></li>
+        <li class="nav-item active"><a href="/questions">Preguntas</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="content">
+    <div class="admin-section">
+      <span class="admin-icon">👤</span> 
+      <span class="admin-text">Admin</span>
+    </div>
+    <div class="users-section">
+      <div class="users-header">
+        <h2>PREGUNTAS</h2>
+        <div class="search-area">
+          <span class="search-label">FILTRAR CATEGORÍAS:</span>
+          <div class="search-box">
+            <input type="text" placeholder="Historia">
+          </div>
+        </div>
+        <button class="create-button">Crear</button>
+      </div>
+      <div class="questions-table">
+        <div class="table-header">
+          <div class="header-item">PREGUNTA</div>
+          <div class="header-item">CATEGORÍA</div>
+          <div class="header-item">ACCIÓN</div>
+        </div>
+        <div class="table-row" *ngFor="let question of questions">
+          <div class="table-item">{{ question.text }}</div>
+          <div class="table-item">{{ question.category }}</div>
+          <div class="table-item">
+            <button class="modify-button">Modificar</button>
+            <button class="delete-button" (click)="deleteQuestion(question)">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

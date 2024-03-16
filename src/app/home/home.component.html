@@ -1,22 +1,24 @@
-<div class="HomeS">
-    <div class="Line1"></div>
-    <div class="Media">
-        <img class="Media" src="https://cdn-icons-png.freepik.com/512/4804/4804212.png" />
-    </div>
-    <div class="ButtonContainer">
-        <button class="InicioBtn">Inicio</button>
-        <img src="https://img.icons8.com/ios-filled/50/000000/home.png" class="ButtonImage" alt="Inicio">
-    </div>
-    <div class="ButtonContainer">
-        <button class="UsuariosBtn">Usuarios</button>
-        <img src="https://img.icons8.com/ios-filled/50/000000/user-group-man-man.png" class="ButtonImage" alt="Usuarios">
-    </div>
-    <div class="ButtonContainer">
-        <button class="PreguntasBtn">Preguntas</button>
-        <img src="https://img.icons8.com/ios-filled/50/000000/question-mark.png" class="ButtonImage" alt="Preguntas">
-    </div>
-    <div class="Title">¡ Bienvenido a la consola de<br/><br/>administración de <br/><br/>SmartAwake !</div>
-    <div class="IconsAccountCircleFilled24px">
-        <img src="https://img.icons8.com/material-rounded/24/000000/user-male-circle.png" class="Icon" alt="Usuario">
-    </div>
+<!-- main-layout.component.html -->
+<div class="container">
+    <aside class="sidebar">
+      <div class="logo-container">
+        <img src="https://cdn-icons-png.freepik.com/512/4804/4804212.png" alt="Logo" class="sidebar-logo">
+      </div>
+      <nav class="nav">
+        <ul>
+          <li class="nav-item active"><a href="/home">Inicio</a></li>
+          <li class="nav-item"><a href="/users">Usuarios</a></li>
+          <li class="nav-item"><a href="/questions">Preguntas</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content">
+        <div class="admin-section">
+            <span class="admin-icon">👤</span> 
+            <span class="admin-text">Admin</span>
+        </div>
+        <div class="welcome-section">
+          <h1>¡Bienvenido a la consola de administración de SmartAwake!</h1>
+        </div>
+    </main>
 </div>

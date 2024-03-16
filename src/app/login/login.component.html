@@ -1,11 +1,25 @@
-<div class="container">
-  <img class="Media" src="https://img.freepik.com/vector-gratis/ilustracion-concepto-happy-wake-up_114360-23506.jpg?w=1380&t=st=1710218301~exp=1710218901~hmac=d42dada70e186ff18a7d794601bc1840cb26247f2e99afb54280f0686c38d392" />
-  <div class="content">
-    <div class="title">SmartAwake</div>
-    <div class="inputs">
-      <input type="text" class="input" placeholder="Correo">
-      <input type="password" class="input" placeholder="Contraseña">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartAwake Login</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="illustration-container">
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-happy-wake-up_114360-23506.jpg?w=1380&t=st=1710218301~exp=1710218901~hmac=d42dada70e186ff18a7d794601bc1840cb26247f2e99afb54280f0686c38d392" alt="Happy Wake Up">
+        </div>
+        <div class="login-form-container">
+            <h1>SmartAwake</h1>
+            <form class="login-form">
+                <input type="email" placeholder="correo" required>
+                <input type="password" placeholder="contraseña" required>
+                <button type="button" onclick="window.location.href='/home';">Iniciar sesión</button>
+
+            </form>
+        </div>
     </div>
-    <button routerLink="/home" class="button">Iniciar sesión</button>
-  </div>
-</div>
+</body>
+</html>

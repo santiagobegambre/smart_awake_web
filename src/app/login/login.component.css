@@ -1,46 +1,57 @@
-.container {
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    background-color: #ffffff;
-  }
-  
-  .media {
-    width: 50%;
-    height: auto;
-    order: -1; 
-  }
-  
-  .content {
-    max-width: 50%;
-  }
-  
-  .title {
-    font-size: 4.1rem;
-    font-weight: 500;
-    margin-bottom: 5.3rem;
-  }
-  
-  .inputs {
-    margin-bottom: 1rem;
-  }
-  
-  .input {
-    width: calc(100% - 4rem); /* Reducir el ancho para dejar espacio para los bordes */
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #000000;
-    border-radius: 0; /* Hacer los bordes cuadrados */
+/* styles.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.button {
-    width: calc(100% - 2rem); /* Hacer que el botón tenga el mismo ancho que los cuadros de texto */
-    background-color: #5467e2;
-    color: #ffffff;
-    border: none;
-    border-radius: 0; /* Hacer los bordes cuadrados */
-    padding: 1rem; /* Ajustar el padding para que sea proporcional */
-    font-size: 1rem;
-    cursor: pointer;
-    margin-bottom: 1rem; /* Ajustar el margen inferior para que sea consistente con los cuadros de texto */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.illustration-container img {
+  max-width: 80%;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+.login-form-container {
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+.login-form-container h1 {
+  color: #3C3C3C;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  padding: 15px;
+  border: none;
+  background-color: #5467E2;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.login-form button:hover {
+  background-color: #5467E2;
 }
